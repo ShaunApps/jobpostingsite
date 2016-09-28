@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       # Save the user id inside the browser cookie. This is how we keep the user
       # logged in when they navigate around our website.
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to '/jobs'
     else
       redirect_to '/login'
     end
@@ -19,6 +19,18 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     redirect_to '/login'
+  end
+
+
+  def login
+    if @current_user
+      redirect_to root_path
+    end
+  end
+
+  def logout
+    session[:user_id] = nil
+    CASClient::Frameworks::Rails::Filter.logout(self)
   end
 
 

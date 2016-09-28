@@ -11,17 +11,24 @@
     </div>
   <% end %>
 
+<fieldset>
   <div class="form-group">
-    <%= f.label :name, :class => "control-label" %>
-    <%= f.text_field :name, :class => "form-control" %>
+    <%= f.label :first_name, :class => "control-label" %>
+    <%= f.text_field :first_name, :class => "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :username, :class => "control-label" %>
-    <%= f.text_field :username, :class => "form-control" %>
+    <%= f.label :last_name, :class => "control-label" %>
+    <%= f.text_field :last_name, :class => "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :last_name, :class => "control-label" %>
+    <%= f.text_field :last_name, :class => "form-control" %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
+</fieldset>
 <% end %>

@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rubycas/rubycas-client.git
+  revision: 7b67c8f1b5515ee4e28479d640d2da0a5aadfbe0
+  specs:
+    rubycas-client (2.3.10.rc1)
+      activesupport
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,9 +49,11 @@ GEM
     autoprefixer-rails (6.5.0)
       execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.alpha4)
-      autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.4.19)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+    bootswatch-rails (3.3.5)
+      railties (>= 3.1)
     builder (3.2.2)
     byebug (9.0.5)
     coffee-rails (4.2.1)
@@ -163,7 +172,8 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  bootstrap (~> 4.0.0.alpha4)
+  bootstrap-sass (~> 3.3.6)
+  bootswatch-rails
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -173,7 +183,8 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-assets-tether (>= 1.1.0)
-  sass-rails (~> 5.0)
+  rubycas-client!
+  sass-rails (>= 3.2)
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

@@ -13,8 +13,8 @@
 
  */
 
- @import "bootstrap";
- // @import "user";
+@import "bootstrap-sprockets";
+
 
  body, form, ul, table {
    margin-top: 20px;
@@ -87,3 +87,9 @@
      border-bottom: 0;
    }
  }
+
+
+ @import "bootswatch/flatly/variables";
+
+ @import "bootstrap";
+ @import "bootswatch/flatly/bootswatch";
