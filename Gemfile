@@ -31,6 +31,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'bootswatch-rails'
 
+gem 'normalize-rails'
+
 gem 'rails-assets-tether', '>= 1.1.0'
 
 gem 'rubycas-client', :git => 'git://github.com/rubycas/rubycas-client.git'

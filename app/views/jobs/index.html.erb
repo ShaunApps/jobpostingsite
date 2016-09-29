@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Jobs</h1>
+<h1>Job Opportunities</h1>
 
-<table>
+<table class="table table-striped table-hover" >
   <thead>
     <tr>
       <th>Title</th>
-      <th>Description</th>
-      <th>Contact</th>
       <th>Company</th>
+      <th>Contact</th>
       <th>Location</th>
       <th colspan="3"></th>
     </tr>
@@ -17,14 +16,13 @@
   <tbody>
     <% @jobs.each do |job| %>
       <tr>
-        <td><%= job.title %></td>
-        <td><%= job.description %></td>
-        <td><%= job.contact %></td>
+        <td><%= link_to job.title, job %></td>
         <td><%= job.company %></td>
+        <td><%= job.contact %></td>
         <td><%= job.location %></td>
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>

@@ -11,32 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+<fieldset>
+  <div class="form-group">
+    <%= f.text_field :title, placeholder: "Enter the Job Title", :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+  <div class="form-group">
+    <%= f.text_area :description, placeholder: "Enter the job description", :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :contact %>
-    <%= f.text_field :contact %>
+  <div class="form-group">
+    <%= f.text_field :contact, placeholder: "Enter email or preferred method of contact", :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :company %>
-    <%= f.text_field :company %>
+  <div class="form-group">
+    <%= f.text_field :company, placeholder: "Enter the company/organization name", :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :location %>
-    <%= f.text_field :location %>
+  <div class="form-group">
+    <%= f.text_field :location, placeholder: "Enter position location", :class => "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.submit "Submit", :class => "btn btn-primary" %>
+</fieldset>
 <% end %>
