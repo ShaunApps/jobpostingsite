@@ -1,7 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
-  # before_action CASClient::Frameworks::Rails::Filter, only: [:index, :show]
-
+  skip_before_action CASClient::Frameworks::Rails::Filter, only: [:new, :create]
   # GET /jobs
   # GET /jobs.json
   def index

@@ -11,5 +11,6 @@ require 'casclient/frameworks/rails/filter'
 
 CASClient::Frameworks::Rails::Filter.configure(
    :cas_base_url => "http://login.wyncode.co",
-   :service_url => "http://localhost:3000"
+   :extra_attributes_session_key => :cas_extra_attributes,
+   :service_url => "http://localhost:3000/"
 )

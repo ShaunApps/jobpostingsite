@@ -30,11 +30,11 @@
             <ul class="nav navbar-nav">
               <% if @current_user %>
                   <li class="active">
-                    <%= link_to "Log out", :controller => "sessions", :action => "logout" %>
+                  <%= link_to "Log out", :controller => "sessions", :action => "logout" %>
                   </li>
               <% else %>
                 <li class="active">
-                  <%= link_to "Login", :controller => "sessions", :action => "login" %>
+                  <%= link_to("Login", CASClient::Frameworks::Rails::Filter.login_url(controller)) %>
                 </li>
                 <% end %>
               </ul>
