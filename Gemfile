@@ -33,6 +33,8 @@ gem 'bootswatch-rails'
 
 gem 'normalize-rails'
 
+gem 'httparty'
+
 gem 'rails-assets-tether', '>= 1.1.0'
 
 gem 'rubycas-client', :git => 'git://github.com/rubycas/rubycas-client.git'
