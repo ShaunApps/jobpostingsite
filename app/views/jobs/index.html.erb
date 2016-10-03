@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Job Opportunities</h1>
+<h1 align="center">Job Postings</h1>
 
 <table class="table table-striped table-hover" >
   <thead>
     <tr>
       <th>Title</th>
       <th>Company</th>
-      <th>Contact</th>
+      <!-- <th>Contact</th> -->
       <th>Location</th>
       <th colspan="3"></th>
     </tr>
@@ -18,11 +18,8 @@
       <tr>
         <td><%= link_to job.title, job %></td>
         <td><%= job.company %></td>
-        <td><%= job.contact %></td>
+        <!-- <td><%= job.contact %></td> -->
         <td><%= job.location %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-
       </tr>
     <% end %>
   </tbody>
