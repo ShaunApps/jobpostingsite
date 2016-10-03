@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :jobs
 
   resources :users
-  
+
   root 'page#index'
 
   get "login", to: "sessions#login"
