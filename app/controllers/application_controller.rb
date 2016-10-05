@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  before_action :current_user
   before_action CASClient::Frameworks::Rails::Filter
+  before_action :current_user
   helper_method :current_user
   protect_from_forgery with: :exception
 
