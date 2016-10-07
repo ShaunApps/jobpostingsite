@@ -5,7 +5,6 @@ class JobsController < ApplicationController
   # GET /jobs.json
   def index
     @jobs = Job.all
-    debugger
   end
 
   # GET /jobs/1
@@ -29,7 +28,8 @@ class JobsController < ApplicationController
 
     respond_to do |format|
       if @job.save
-        format.html { redirect_to @job, notice: 'Job was successfully created.' }
+        # redirect_to url_for(:controller => :controller_name, :action => :action_name)
+        format.html { redirect_to url_for(:controller => "page", :action => "success"), notice: 'Your open role was successfully created!' }
         format.json { render :show, status: :created, location: @job }
       else
         format.html { render :new }
