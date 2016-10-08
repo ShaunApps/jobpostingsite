@@ -8,8 +8,8 @@ class SessionsController < ApplicationController
 
   def logout
     session[:ex_id] = nil
+    session[:user_id] = nil
     CASClient::Frameworks::Rails::Filter.logout(self)
-
   end
 
 
