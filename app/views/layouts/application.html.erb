@@ -19,11 +19,14 @@
             <span class="icon-bar"></span>
           </button>
           <!-- <a style="background-image: <%= image_url "assets/images/logo.jpg" %>; width: 84px; height: 62px;" class="navbar-brand" href="/"></a> -->
-          <a style="background-image" id="logothing" class="navbar-brand pull-left" href="/" ><%= image_tag("logo.jpg", :size => "96x66")  %></a>
+          <a style="background-image" id="logothing" class="navbar-brand pull-left" href="/" ><%= image_tag("logo.jpg", :size => "116x76")  %></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
             <!-- <a class=navbar-brand> <img src="<%= image_url('logo.jpg') %>" /> </a> -->
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Home", :controller => "jobs", :action => "index"%> </li>
+          </ul>
            <ul class="nav navbar-nav">
              <li><%= link_to "Job Listings", :controller => "jobs", :action => "index"%> </li>
            </ul>
@@ -31,7 +34,7 @@
             <ul class="nav navbar-nav">
               <% if @current_user %>
                   <li>
-                  <%= link_to("Log out", logout_url) %>
+                  <%= link_to "Log out", :controller => "sessions", :action => "logout" %>
                   </li>
               <% else %>
                 <li>

@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find_for_session(session[:cas_extra_attributes.to_s]) rescue nil
   end
 
+  
+
 
   # def authorize
   #   redirect_to '/login' unless current_user

@@ -39,6 +39,8 @@ gem 'rails-assets-tether', '>= 1.1.0'
 
 gem 'rubycas-client', :git => 'git://github.com/rubycas/rubycas-client.git'
 
+gem 'will_paginate', '~> 3.1.0'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
