@@ -5,7 +5,6 @@ class JobsController < ApplicationController
   # GET /jobs.json
   def index
     @jobs = Job.paginate(:page => params[:page])
-    # @posts = Post.paginate(:page => params[:page])
   end
 
   # GET /jobs/1

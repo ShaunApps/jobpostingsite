@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
 
   def login
     if @current_user
-      redirect_to jobs_path
+      redirect_to root_path
     end
   end
 
