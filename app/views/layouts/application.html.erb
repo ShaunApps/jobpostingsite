@@ -30,6 +30,9 @@
            <ul class="nav navbar-nav">
              <li><%= link_to "Job Listings", :controller => "jobs", :action => "index"%> </li>
            </ul>
+           <ul class="nav navbar-nav">
+             <li><%= link_to "Post a Job", :controller => "jobs", :action => "new"%> </li>
+           </ul>
           <nav class="nav navbar-nav navbar-right">
             <ul class="nav navbar-nav">
               <% if @current_user %>
