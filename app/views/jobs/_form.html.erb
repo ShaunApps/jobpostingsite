@@ -21,16 +21,26 @@
   </div>
 
   <div class="form-group">
-    <%= f.text_field :contact, placeholder: "Enter email or preferred method of contact", :class => "form-control" %>
-  </div>
-
-  <div class="form-group">
     <%= f.text_field :company, placeholder: "Enter the company/organization name", :class => "form-control" %>
   </div>
 
   <div class="form-group">
     <%= f.text_field :location, placeholder: "Enter position location", :class => "form-control" %>
   </div>
+
+  <div class="form-group">
+    <%= f.text_field :contact, placeholder: "Enter email or preferred method of contact", :class => "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :email, placeholder: "Enter the best email to reach you at", :class => "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :phone_number, placeholder: "Enter the best phone number to reach you at", :class => "form-control input-medium bfh-phone"%>
+  </div>
+
+  <!-- <input type="text" class="input-medium bfh-phone" data-country="US"> -->
 
   <%= f.submit "Submit", :class => "btn btn-primary pull-right"%>
   <!-- <%= link_to 'Back', jobs_path %> -->

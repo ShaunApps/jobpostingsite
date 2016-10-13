@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-  validates :title, :description, :contact, :company, :location, presence: true
+  validates :title, :description, :contact, :company, :location, :email, :phone_number, presence: true
   after_create :post_to_slack
 
   self.per_page = 25
