@@ -48,6 +48,24 @@
   </div>
 
 
+<% if @job.email_shown %>
+  <div class="well well-sm">
+  <p>
+    <strong>Email: </strong>
+    <%= @job.email %>
+  </p>
+</div>
+<% end %>
+
+<% if @job.phone_number_shown %>
+<div class="well well-sm">
+  <p>
+    <strong>Phone Number: </strong>
+    <%= @job.phone_number %>
+  </p>
+</div>
+<% end %>
+
 
   </div>
 </div>

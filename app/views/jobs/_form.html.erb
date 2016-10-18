@@ -40,7 +40,18 @@
     <%= f.text_field :phone_number, placeholder: "Enter the best phone number to reach you at", :class => "form-control input-medium bfh-phone"%>
   </div>
 
-  <!-- <input type="text" class="input-medium bfh-phone" data-country="US"> -->
+  <div class="checkbox">
+    <%= f.check_box :email_shown %>
+      <%= label_tag("I want my email to be displayed to applicants") %>
+  </div>
+  <div class="checkbox">
+    <%= f.check_box :phone_number_shown %>
+      <%= label_tag("I want my phone number to be displayed to applicants") %>
+  </div>
+
+
+
+
 
   <%= f.submit "Submit", :class => "btn btn-primary pull-right"%>
   <!-- <%= link_to 'Back', jobs_path %> -->
