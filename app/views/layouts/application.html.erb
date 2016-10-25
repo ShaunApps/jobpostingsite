@@ -34,7 +34,19 @@
            <ul class="nav navbar-nav">
              <li><%= link_to "Post a Job", :controller => "jobs", :action => "new"%> </li>
            </ul>
-          <nav class="nav navbar-nav navbar-right">
+
+           <ul class="nav navbar-nav navbar-right">
+             <% if @current_user %>
+                 <li>
+                 <%= link_to "Log out", :controller => "sessions", :action => "logout" %>
+                 </li>
+             <% else %>
+               <li>
+                 <%= link_to("Login", CASClient::Frameworks::Rails::Filter.login_url(controller)) %>
+               </li>
+               <% end %>
+             </ul>
+          <!-- <nav class="nav navbar-nav navbar-right">
             <ul class="nav navbar-nav">
               <% if @current_user %>
                   <li>
@@ -46,7 +58,7 @@
                 </li>
                 <% end %>
               </ul>
-          </nav>
+          </nav> -->
         </div>
       </div>
     </nav>
