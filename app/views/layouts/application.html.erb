@@ -42,23 +42,12 @@
                  </li>
              <% else %>
                <li>
+                 <!-- logout isn't properly logging out  -->
                  <%= link_to("Login", CASClient::Frameworks::Rails::Filter.login_url(controller)) %>
                </li>
                <% end %>
              </ul>
-          <!-- <nav class="nav navbar-nav navbar-right">
-            <ul class="nav navbar-nav">
-              <% if @current_user %>
-                  <li>
-                  <%= link_to "Log out", :controller => "sessions", :action => "logout" %>
-                  </li>
-              <% else %>
-                <li>
-                  <%= link_to("Login", CASClient::Frameworks::Rails::Filter.login_url(controller)) %>
-                </li>
-                <% end %>
-              </ul>
-          </nav> -->
+          
         </div>
       </div>
     </nav>
