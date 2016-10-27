@@ -1,24 +1,7 @@
-# README
+# Wynterque - feel free to rename! 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App for Wyncode Hiring Partners to post job opportunities exclusively for Wyncode students.
 
-Things you may want to cover:
+Employers should be directed to /jobs/new to post jobs - no login required.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To see a list of jobs postings and a specific job posting, Wyncode students need to login CAS implementation
